@@ -27,6 +27,17 @@ user_move = input("Make a move: rock, paper, or scissors: ")
 computer_move = random.choice(["rock", "paper", "scissors"])
 
 determine_winner(user_move, computer_move)
+while True: 
+    play = str(input("Do you want to play again? ")).lower()
+    if play == "yes":
+        user_move = input("Make a move: rock, paper, or scissors: ")
+        computer_move = random.choice(["rock", "paper", "scissors"])
+        determine_winner(user_move, computer_move)
+    else:
+        print("exiting game")
+        break
+    
+
 
 
 
